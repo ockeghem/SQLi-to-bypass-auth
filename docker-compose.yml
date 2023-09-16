@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    php:
+        # image: php:7.2-apache
+        # image: php:8.2.10-apache
+        build: php
+        volumes:
+            - ./html:/var/www/html
+        ports:
+            - 7890:80
